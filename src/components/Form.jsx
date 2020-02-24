@@ -1,8 +1,20 @@
 import React from "react";
 
+const countingSystem = [
+  { label: "Metric", value: "metric" },
+  { label: "Imperial", value: "imperial" },
+];
+
+
+
 const Form = props => {
   return (
     <form onSubmit={props.onSubmitHandler}>
+      <select id="select-method" 
+        onChange={props.onChangeHandler}>
+        <option value="metric">Metric</option>
+        <option value="imperial">Imperial</option>
+      </select>
       <label htmlFor="weight">Weight</label>
       <input
         type="number"

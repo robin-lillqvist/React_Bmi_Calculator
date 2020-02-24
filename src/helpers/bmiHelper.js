@@ -1,4 +1,12 @@
-export const calculateBmi = (weight, height) => {
+export const calculateBmi = (weight, height, countingSystem) => {
+  
+  console.log("CountingMethod is set to: " +countingSystem)
+  if(countingSystem === "imperial"){
+    weight = (weight / 2,20462)
+    height = (height / 2,54)
+    debugger
+  }
+
     const bmiValue = (weight / (((height / 100) * height) / 100)).toFixed(2);
     const bmiMessage = setBMIMessage(bmiValue);
     return [bmiValue, bmiMessage];
