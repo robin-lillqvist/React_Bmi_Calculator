@@ -36,7 +36,9 @@
     "cypress": "^4.0.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2"
-  }
-
-  
+  },
+  "main": "index.js",
+  "repository": "https://github.com/robin-lillqvist/React_Bmi_Calculator.git",
+  "author": "<robin.lillqvist@gmail.com>",
+  "license": "MIT"
 }
