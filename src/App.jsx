@@ -9,10 +9,12 @@ class App extends Component {
     height: "",
     bmiValue: "",
     bmiMessage: "",
-    countingSystem: ""
+    countingSystem: "metric"
   };
 
-  onChangeHandler = e => this.setState({ [e.target.name]: e.target.value });
+  onChangeHandler = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
 
   onSubmitHandler = e => {
     e.preventDefault();
