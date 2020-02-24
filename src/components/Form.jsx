@@ -1,14 +1,5 @@
 import React from "react";
 
-$(function() {
-  $('#select-method').change(function() {
-      localStorage.setItem('todoData', this.value);
-  });
-  if(localStorage.getItem('todoData')){
-      $('#edit').val(localStorage.getItem('todoData'));
-  }
-});
-
 const Form = props => {
   return (
     <form onSubmit={props.onSubmitHandler}>
