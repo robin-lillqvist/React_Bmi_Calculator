@@ -1,11 +1,13 @@
 import React from "react";
 
-const countingSystem = [
-  { label: "Metric", value: "metric" },
-  { label: "Imperial", value: "imperial" },
-];
-
-
+$(function() {
+  $('#select-method').change(function() {
+      localStorage.setItem('todoData', this.value);
+  });
+  if(localStorage.getItem('todoData')){
+      $('#edit').val(localStorage.getItem('todoData'));
+  }
+});
 
 const Form = props => {
   return (
