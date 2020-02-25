@@ -11,8 +11,8 @@ const Form = props => {
       <select name="countingSystem" id="select-method" 
         onChange={props.onChangeHandler}
       >
-        <option value="metric">Metric</option>
-        <option value="imperial">Imperial</option>
+        <option name="metric" value="metric">Metric</option>
+        <option name="imperial" value="imperial">Imperial</option>
 
       </select>
 

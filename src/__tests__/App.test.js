@@ -22,8 +22,11 @@ describe("App component", () => {
 
   it("Counts using the imperial method", () => {
     wrapper
-      .find("#select-method")
-      .simulate("change", { target: { value: "imperial" } });
+      .find('select[name="countingSystem"]')
+      .simulate("change", { target: {
+        name: 'countingSystem',
+        value: 'imperial'
+      }})
     wrapper
       .find("#weight")
       .simulate("change", { target: { name: "weight", value: "192" } });
